@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css">
+
+
+</head>
+<style>
+    body {
+        background-color: black;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        color: black;
+        background-color: white;
+        display: inline-block;
+        width: 100px;
+    }
+</style>
+
+<body>
+
+    <div class="main">
+        <div class="header">
+            <h2>Stop Watch</h2>
+        </div>
+        <div>
+            <h1 id="hour">0</h1>
+            <h1 id="min">0</h1>
+            <h1 id="sec">0</h1>
+            <h1 id="msec">0</h1>
+        </div>
+        <div class="qadeer">
+            <button type="button" class="btn btn-warning" id="button" onclick="start()" >Start</button>
+            <button type="button" class="btn btn-warning" id="myFoo" onclick="stop()">Pause</button>
+            <button type="button" class="btn btn-warning" onclick="reset()">Reset</button>
+        </div>
+
+    </div>
+
+
+
+    <script src="app.js"></script>
+    
+</body>
+
+</html>
